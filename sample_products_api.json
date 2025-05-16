@@ -1,35 +1,26 @@
 
-import json
-
-sample_data = {
-    "products": [
-        {
-            "id": 101,
-            "name": "Laptop",
-            "category": "Electronics",
-            "price": 1200.50,
-            "createdAt": "2025-05-15T08:00:00Z"
-        },
-        {
-            "id": None,
-            "name": "Tablet",
-            "category": "Electronics",
-            "price": -100,
-            "createdAt": "2025-05-15T08:05:00Z"
-        },
-        {
-            "id": 103,
-            "name": "Monitor",
-            "category": "Accessories",
-            "price": 180.75,
-            "createdAt": "2025-05-15T08:10:00Z"
-        }
-    ]
+{
+  "products": [
+    {
+      "id": 101,
+      "name": "Laptop",
+      "category": "Electronics",
+      "price": 1200.5,
+      "createdAt": "2025-05-15T08:00:00Z"
+    },
+    {
+      "id": null,
+      "name": "Tablet",
+      "category": "Electronics",
+      "price": -100,
+      "createdAt": "2025-05-15T08:05:00Z"
+    },
+    {
+      "id": 103,
+      "name": "Monitor",
+      "category": "Accessories",
+      "price": 180.75,
+      "createdAt": "2025-05-15T08:10:00Z"
+    }
+  ]
 }
-
-
-json_file_path = "/mnt/data/sample_products_api.json"
-with open(json_file_path, "w") as f:
-    json.dump(sample_data, f, indent=4)
-
-json_file_path
